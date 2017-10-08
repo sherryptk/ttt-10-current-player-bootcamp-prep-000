@@ -15,7 +15,7 @@ def current_player(board)
       player=move
     end
   end
-  
+
     if player == "X"
       return "O"
     else
