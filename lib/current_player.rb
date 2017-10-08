@@ -9,15 +9,9 @@ def turn_count(board)
 end
 
 def current_player(board)
-  player=nil
-  board.each do |move|
-    if move !=" "
-      player=move
-    end
-  end
-
-    if player == "X"
-      return "O"
-    else
-      return "X"
+  turn = turn_count(board)
+  if turn % 0
+    return "X"
+  else
+    return "O"
 end
